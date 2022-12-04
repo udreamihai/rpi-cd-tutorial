@@ -47,4 +47,4 @@ jobs:
         run: |
           source flask-env/bin/activate
           RUNNER_TRACKING_ID=""
-          gunicorn -w 1 -b 192.168.0.69:4000 app:app -D --log-file=gunicorn.log
+          gunicorn -w 1 -b 127.0.0.1:4000 app:app -D --log-file=gunicorn.log
